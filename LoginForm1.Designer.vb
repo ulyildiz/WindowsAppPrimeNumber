@@ -38,6 +38,7 @@ Partial Class LoginForm1
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
+        Me.lblPasswordError = New System.Windows.Forms.Label()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -56,23 +57,22 @@ Partial Class LoginForm1
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(220, 23)
         Me.UsernameLabel.TabIndex = 0
-        Me.UsernameLabel.Text = "&Kullanıcı adı"
+        Me.UsernameLabel.Text = "&Username"
         Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PasswordLabel
         '
-        Me.PasswordLabel.Location = New System.Drawing.Point(172, 81)
+        Me.PasswordLabel.Location = New System.Drawing.Point(174, 75)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(220, 23)
         Me.PasswordLabel.TabIndex = 2
-        Me.PasswordLabel.Text = "&Parola"
+        Me.PasswordLabel.Text = "&Password"
         Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'txtUsernameBox
         '
         Me.txtUsernameBox.Location = New System.Drawing.Point(174, 44)
         Me.txtUsernameBox.Name = "txtUsernameBox"
-        Me.txtUsernameBox.ReadOnly = True
         Me.txtUsernameBox.Size = New System.Drawing.Size(220, 20)
         Me.txtUsernameBox.TabIndex = 1
         Me.txtUsernameBox.Text = "admin"
@@ -102,6 +102,17 @@ Partial Class LoginForm1
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&İptal"
         '
+        'lblPasswordError
+        '
+        Me.lblPasswordError.AutoSize = True
+        Me.lblPasswordError.ForeColor = System.Drawing.Color.Red
+        Me.lblPasswordError.Location = New System.Drawing.Point(172, 124)
+        Me.lblPasswordError.Name = "lblPasswordError"
+        Me.lblPasswordError.Size = New System.Drawing.Size(227, 13)
+        Me.lblPasswordError.TabIndex = 6
+        Me.lblPasswordError.Text = "Invalid password (admin's password is -> 1234)"
+        Me.lblPasswordError.Visible = False
+        '
         'LoginForm1
         '
         Me.AcceptButton = Me.OK
@@ -109,6 +120,7 @@ Partial Class LoginForm1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(401, 192)
+        Me.Controls.Add(Me.lblPasswordError)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.PasswordTextBox)
@@ -122,11 +134,12 @@ Partial Class LoginForm1
         Me.Name = "LoginForm1"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "LoginForm1"
+        Me.Text = "PrimeApp"
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents lblPasswordError As Label
 End Class

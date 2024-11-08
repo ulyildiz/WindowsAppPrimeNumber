@@ -1,25 +1,17 @@
 Public Class LoginForm1
 
-    ' TODO: Saðlanan kullanýcý adý ve parolayý kullanarak özel kimlik doðrulamasý gerçekleþtirmek için kod girin 
-    ' (Bkz. https://go.microsoft.com/fwlink/?LinkId=35339).  
-    ' Özel ilke o zaman geçerli iþ parçacýðýnýn ilkesine asaðýdaki gibi iliþtirilebilir: 
-    '     My.User.CurrentPrincipal = CustomPrincipal
-    ' CustomPrincipal'ýn kimlik doðrulamasý gerçekleþtirmek için IPrincipal uygulamasý olduðu yerde. 
-    ' Ardýndan My.User, CustomPrincipal nesnesinde yalýtýlmýþ kullanýcý adý, görünen ad, vb.
-    ' kimlik bilgileri geri döndürür
-
-    Dim admin_password As String = "1234"
-    Private Sub txtUsernameBox_TextChanged(sender As Object, e As EventArgs) Handles txtUsernameBox.TextChanged
-        txtUsernameBox.Text = My.User.Name
-
+    Private Sub LoginForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' txtUsernameBox.Text = My.User.Name
+        txtUsernameBox.Text = "admin"
     End Sub
 
-
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        If PasswordTextBox.Text = "1234" Then
-            Dim isPrimeForm As New isPrime
-            isPrimeForm.Show()
+        If PasswordTextBox.Text = "1234" AndAlso txtUsernameBox.Text = "admin" Then
+            Dim frmPanelForm As New frmPanel
+            frmPanelForm.Show()
             Me.Hide()
+        Else
+            lblPasswordError.Visible = True
         End If
 
     End Sub

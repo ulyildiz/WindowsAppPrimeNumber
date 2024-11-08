@@ -74,17 +74,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="frmFindUpTo.Designer.vb">
+      <DependentUpon>frmFindUpTo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindUpTo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrimeFact.Designer.vb">
+      <DependentUpon>frmPrimeFact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrimeFact.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPanel.Designer.vb">
       <DependentUpon>frmPanel.vb</DependentUpon>
     </Compile>
     <Compile Include="frmPanel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="isPrime.vb">
+    <Compile Include="frmIsPrime.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="isPrime.Designer.vb">
-      <DependentUpon>isPrime.vb</DependentUpon>
+    <Compile Include="frmIsPrime.Designer.vb">
+      <DependentUpon>frmIsPrime.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm1.Designer.vb">
@@ -111,11 +123,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmFindUpTo.resx">
+      <DependentUpon>frmFindUpTo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrimeFact.resx">
+      <DependentUpon>frmPrimeFact.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPanel.resx">
       <DependentUpon>frmPanel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="isPrime.resx">
-      <DependentUpon>isPrime.vb</DependentUpon>
+    <EmbeddedResource Include="frmIsPrime.resx">
+      <DependentUpon>frmIsPrime.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm1.resx">
       <DependentUpon>LoginForm1.vb</DependentUpon>

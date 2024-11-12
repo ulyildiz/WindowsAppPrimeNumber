@@ -65,6 +65,7 @@ Partial Class frmIsPrime
         '
         Me.lblInputError.AutoSize = True
         Me.lblInputError.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
+        Me.lblInputError.ForeColor = System.Drawing.SystemColors.Desktop
         Me.lblInputError.Location = New System.Drawing.Point(263, 118)
         Me.lblInputError.Name = "lblInputError"
         Me.lblInputError.Size = New System.Drawing.Size(403, 25)

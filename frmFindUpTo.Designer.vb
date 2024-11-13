@@ -76,11 +76,11 @@ Partial Class frmFindUpTo
         'lblErrorText
         '
         Me.lblErrorText.AutoSize = True
-        Me.lblErrorText.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
+        Me.lblErrorText.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
         Me.lblErrorText.ForeColor = System.Drawing.SystemColors.Desktop
         Me.lblErrorText.Location = New System.Drawing.Point(246, 232)
         Me.lblErrorText.Name = "lblErrorText"
-        Me.lblErrorText.Size = New System.Drawing.Size(317, 25)
+        Me.lblErrorText.Size = New System.Drawing.Size(245, 20)
         Me.lblErrorText.TabIndex = 10
         Me.lblErrorText.Text = "Input should be positive number"
         Me.lblErrorText.Visible = False

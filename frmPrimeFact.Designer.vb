@@ -73,11 +73,11 @@ Partial Class frmPrimeFact
         'lblErrorInput
         '
         Me.lblErrorInput.AutoSize = True
-        Me.lblErrorInput.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
+        Me.lblErrorInput.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
         Me.lblErrorInput.ForeColor = System.Drawing.SystemColors.Desktop
         Me.lblErrorInput.Location = New System.Drawing.Point(255, 260)
         Me.lblErrorInput.Name = "lblErrorInput"
-        Me.lblErrorInput.Size = New System.Drawing.Size(317, 25)
+        Me.lblErrorInput.Size = New System.Drawing.Size(245, 20)
         Me.lblErrorInput.TabIndex = 4
         Me.lblErrorInput.Text = "Input should be positive number"
         Me.lblErrorInput.Visible = False

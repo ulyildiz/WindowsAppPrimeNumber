@@ -25,9 +25,9 @@ Partial Class frmIsPrime
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.txtUserInput = New System.Windows.Forms.TextBox()
         Me.lblResult = New System.Windows.Forms.Label()
-        Me.lblInputError = New System.Windows.Forms.Label()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.lblIsPrime = New System.Windows.Forms.Label()
+        Me.lblInputError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnCalculate
@@ -61,18 +61,6 @@ Partial Class frmIsPrime
         Me.lblResult.TabIndex = 2
         Me.lblResult.Text = "..."
         '
-        'lblInputError
-        '
-        Me.lblInputError.AutoSize = True
-        Me.lblInputError.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
-        Me.lblInputError.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.lblInputError.Location = New System.Drawing.Point(263, 118)
-        Me.lblInputError.Name = "lblInputError"
-        Me.lblInputError.Size = New System.Drawing.Size(403, 25)
-        Me.lblInputError.TabIndex = 3
-        Me.lblInputError.Text = "Your input should only consist of number"
-        Me.lblInputError.Visible = False
-        '
         'btnClear
         '
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
@@ -93,15 +81,28 @@ Partial Class frmIsPrime
         Me.lblIsPrime.TabIndex = 5
         Me.lblIsPrime.Text = "Is Prime?"
         '
+        'lblInputError
+        '
+        Me.lblInputError.AutoSize = True
+        Me.lblInputError.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))
+        Me.lblInputError.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.lblInputError.Location = New System.Drawing.Point(264, 119)
+        Me.lblInputError.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblInputError.Name = "lblInputError"
+        Me.lblInputError.Size = New System.Drawing.Size(21, 20)
+        Me.lblInputError.TabIndex = 6
+        Me.lblInputError.Text = "..."
+        Me.lblInputError.Visible = False
+        '
         'frmIsPrime
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.ClientSize = New System.Drawing.Size(678, 450)
+        Me.Controls.Add(Me.lblInputError)
         Me.Controls.Add(Me.lblIsPrime)
         Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.lblInputError)
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.txtUserInput)
         Me.Controls.Add(Me.btnCalculate)
@@ -117,7 +118,7 @@ Partial Class frmIsPrime
     Friend WithEvents btnCalculate As Button
     Friend WithEvents txtUserInput As TextBox
     Friend WithEvents lblResult As Label
-    Friend WithEvents lblInputError As Label
     Friend WithEvents btnClear As Button
     Friend WithEvents lblIsPrime As Label
+    Friend WithEvents lblInputError As Label
 End Class
